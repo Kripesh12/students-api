@@ -49,4 +49,7 @@ coverage.out
 .env.*
 
 #SQLite Database
-storage
+/storage
+
+#Configuration file
+/config
