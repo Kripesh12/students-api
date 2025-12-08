@@ -1,0 +1,52 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of `go build` and `go run`
+*.out
+
+# Go workspace files
+go.work
+go.work.sum
+
+# Vendor directory (if using go mod vendor)
+vendor/
+
+# Dependency directories (older GOPATH-based)
+pkg/
+
+# IDE / Editor files
+# VS Code
+.vscode/
+*.code-workspace
+
+# GoLand / IntelliJ
+.idea/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Mac / Linux
+.DS_Store
+*.swp
+
+# Logs
+*.log
+
+# Coverage reports
+*.cov
+coverage.out
+
+# Environment files
+.env
+.env.*
+
+#SQLite Database
+storage
