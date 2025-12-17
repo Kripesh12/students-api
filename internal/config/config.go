@@ -9,7 +9,7 @@ import (
 )
 
 type HttpServer struct {
-	Address string
+	Addr string
 }
 
 type Config struct {
