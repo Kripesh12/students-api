@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"school-api/internals/api/middlewares"
 )
 
 type User struct {
@@ -48,7 +49,7 @@ func main() {
 
 	server := &http.Server{
 		Addr:      port,
-		Handler:   mux,
+		Handler:   middlewares.Logger(mux),
 		TLSConfig: tlsConfig,
 	}
 	// if err := http.ListenAndServe(port, nil); err != nil {
